@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image processor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+    <h1>Image processor</h1>
+</div>
+
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#before">Header Before</a></li>
+    <li><a data-toggle="tab" href="#after">Header After</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="before" class="tab-pane fade in active">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header" style="background-image: url(img/reston/original/morning.jpg)">
+                        <div class="logo">
+                            <img src="img/reston/original/logo170x61.png" alt="l">
+                            <p class="text-info">7.1 kb</p>
+                        </div>
+                    </div>
+                    <p class="text-info">169.8 kb</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="after" class="tab-pane fade">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header" style="background-image: url(img/reston/cache/morning.webp)">
+                        <div class="logo">
+                            <img src="img/reston/cache/logo170x61.webp" alt="l">
+                            <p class="text-info">2.5 kb</p>
+                        </div>
+                    </div>
+                    <p class="text-info">71.9 kb</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h4>Original</h4>
+    <hr>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="img/reston/original/1.jpg" class="img-responsive">
+            <p class="text-info">81.3 kb</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/reston/original/2.jpg" class="img-responsive">
+            <p class="text-info">171.0 kb</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/reston/original/3.jpg" class="img-responsive">
+            <p class="text-info">125.0 kb</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h4>WebP [quality=> 100%, resize => [width => 330]] </h4>
+    <hr>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="img/reston/cache/100/1.webp" class="img-responsive">
+            <p class="text-info">28.3 kb</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/reston/cache/100/2.webp" class="img-responsive">
+            <p class="text-info">46.1 kb</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/reston/cache/100/3.webp" class="img-responsive">
+            <p class="text-info">36.5 kb</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h4>WebP [quality=> 80%, resize => [width => 330]] </h4>
+    <hr>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="img/reston/cache/1.webp" class="img-responsive">
+            <p class="text-info">13.1 kb</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/reston/cache/2.webp" class="img-responsive">
+            <p class="text-info">27.6 kb</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/reston/cache/3.webp" class="img-responsive">
+            <p class="text-info">20.5 kb</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h4>WebP [quality=> 80%] </h4>
+    <hr>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="img/reston/cache/noresize/1.webp" class="img-responsive">
+            <p class="text-info">97.2 kb</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/reston/cache/noresize/2.webp" class="img-responsive">
+            <p class="text-info">95.1 kb</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/reston/cache/noresize/3.webp" class="img-responsive">
+            <p class="text-info">63.6 kb</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h4>Jpeg [quality=> 80%, resize => [width => 330]] </h4>
+    <hr>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="img/reston/cache/80jpeg_resize330/1.jpeg" class="img-responsive">
+            <p class="text-info">12.3 kb</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/reston/cache/80jpeg_resize330/2.jpeg" class="img-responsive">
+            <p class="text-info">22.8 kb</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/reston/cache/80jpeg_resize330/3.jpeg" class="img-responsive">
+            <p class="text-info">17.5 kb</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
